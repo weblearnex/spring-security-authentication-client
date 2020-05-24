@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form  action="http://localhost:8080/oauth/authorize"   method="post">
+<table>
+
+<tr>
+<td>Response type:</td>
+ <td><input type="text" name="response_type" value="code" /> </td>
+</tr>
+<tr>
+<td>Client Id:</td>
+<td> <input type="text" name="client_id" value="webleanex" /></td>
+</tr>
+<tr>
+<td>Client secret:</td>
+<td><input type="text" name="client_secret" value="webleanex" /></td>
+</tr>
+ <tr>
+<td>Redirect uri:</td>
+<td> <input type="text" name="redirect_uri" value="http://localhost:8090/showUsers" /></td>
+</tr>
+
+<tr>
+<td>scope :</td>
+<td> <input type="text" name="scope" value="read" /> </td>
+</tr> 
+<tr>
+
+<tr>
+<td><input type="submit" value="Save"></td>
+<td><input type="reset" value="reset"></td>
+</tr>
+
+</table>
+</body>
+</html>

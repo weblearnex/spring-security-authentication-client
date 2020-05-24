@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1px">
+    <thead>
+        <tr>
+            <th> UserId </th>
+            <th> UserName </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${users.empty}">
+            <td colspan="2"> No Users Available </td>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td><span th:text="${user.userId}"> userId </span></td>
+            <td><span th:text="${user.userName}"> userName </span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
